@@ -83,7 +83,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener{
 			break;
 		case R.id.btn_login:
 			if (StringUtil.isBlank(getStringByUI(etxt_username))) {
-				doToast("用户名不能为空");
+				doToast("用户名不能为空  ");
 				return;
 			}
 			if (StringUtil.isBlank(getStringByUI(etxt_pwd))) {
