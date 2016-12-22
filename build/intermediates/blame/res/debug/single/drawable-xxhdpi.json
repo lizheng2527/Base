@@ -1,0 +1,110 @@
+[
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\list_item_normal.9.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xxhdpi\\list_item_normal.9.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_ask.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xxhdpi\\icon_ask.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_right.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xxhdpi\\icon_right.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_unchecked.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xxhdpi\\icon_unchecked.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_brand_normal.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xxhdpi\\btn_brand_normal.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_me_normal.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xxhdpi\\btn_me_normal.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_call_service.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xxhdpi\\btn_call_service.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\welcome_logo.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xxhdpi\\welcome_logo.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_index_normal.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xxhdpi\\btn_index_normal.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_update_point.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xxhdpi\\icon_update_point.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_launcher.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_cm_dpj_a.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xxhdpi\\icon_cm_dpj_a.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_point_pre.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xxhdpi\\icon_point_pre.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_me_pressed.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xxhdpi\\btn_me_pressed.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_delete_address.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xxhdpi\\icon_delete_address.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_buynow.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xxhdpi\\btn_buynow.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_brand_pressed.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xxhdpi\\btn_brand_pressed.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_topbar_back.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xxhdpi\\icon_topbar_back.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\common_top_bar_arrow_down.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xxhdpi\\common_top_bar_arrow_down.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_checked.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xxhdpi\\icon_checked.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_edit_address.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xxhdpi\\icon_edit_address.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_expense_pressed.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xxhdpi\\btn_expense_pressed.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\common_top_bar_arrow_up.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xxhdpi\\common_top_bar_arrow_up.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_expense_normal.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xxhdpi\\btn_expense_normal.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_topbar_back_pressed.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xxhdpi\\icon_topbar_back_pressed.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\btn_index_pressed.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xxhdpi\\btn_index_pressed.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icon_point.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xxhdpi\\icon_point.png"
+    }
+]

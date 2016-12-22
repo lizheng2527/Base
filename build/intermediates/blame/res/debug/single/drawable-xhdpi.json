@@ -1,0 +1,166 @@
+[
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\arrow_right_black.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\arrow_right_black.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\actionsheet_single_pressed.9.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\actionsheet_single_pressed.9.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\logo_wechat.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\logo_wechat.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_username.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\icon_username.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\bg_common_toast.9.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\bg_common_toast.9.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_top_bar_arrow_up.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\common_top_bar_arrow_up.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\logo_qq.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\logo_qq.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\logo_wechatfavorite.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\logo_wechatfavorite.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ssdk_back_arr.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\ssdk_back_arr.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\list_item_normal.9.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\list_item_normal.9.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_common_check.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\ic_common_check.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btn_sea_code_select.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\btn_sea_code_select.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\logo_qzone.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\logo_qzone.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\logo_sinaweibo.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\logo_sinaweibo.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ckbox_order_uncheck.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\ckbox_order_uncheck.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_loading.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\ic_loading.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\input_bg.9.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\input_bg.9.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\actionsheet_single_normal.9.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\actionsheet_single_normal.9.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btn_ordercar_normal.9.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\btn_ordercar_normal.9.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\actionsheet_bottom_normal.9.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\actionsheet_bottom_normal.9.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_pwd.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\icon_pwd.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\actionsheet_bottom_pressed.9.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\actionsheet_bottom_pressed.9.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\actionsheet_top_pressed.9.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\actionsheet_top_pressed.9.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btn_contact_normal.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\btn_contact_normal.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btn_sea_code_normal.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\btn_sea_code_normal.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btn_contact_pressed.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\btn_contact_pressed.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ckbox_order_checked.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\ckbox_order_checked.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\line_middle.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\line_middle.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\actionsheet_middle_normal.9.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\actionsheet_middle_normal.9.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ssdk_title_div.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\ssdk_title_div.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\bg_line_timepicker.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\bg_line_timepicker.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_top_bar_arrow_down.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\common_top_bar_arrow_down.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ssdk_logo.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\ssdk_logo.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ssdk_auth_title_back.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\ssdk_auth_title_back.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\actionsheet_middle_pressed.9.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\actionsheet_middle_pressed.9.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\login_logo.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\login_logo.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btn_ordercar_pressed.9.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\btn_ordercar_pressed.9.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btn_sea_code_disable.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\btn_sea_code_disable.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\logo_wechatmoments.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\logo_wechatmoments.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\actionsheet_top_normal.9.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\actionsheet_top_normal.9.png"
+    }
+]
