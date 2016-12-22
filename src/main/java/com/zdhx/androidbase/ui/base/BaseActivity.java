@@ -39,6 +39,8 @@ public abstract class BaseActivity extends FragmentActivity {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		mBaseActivity.init(getBaseContext(), this);
 		PgyCrashManager.register(this);
+
+
 	}
 
 	@Override
@@ -186,7 +188,6 @@ public abstract class BaseActivity extends FragmentActivity {
 	}
 
 	public String getStringByUI(View view) {
-
 		if (view instanceof EditText) {
 			return ((EditText) view).getText().toString().trim();
 		} else if (view instanceof TextView) {
