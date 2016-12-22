@@ -4,8 +4,8 @@ public class StringUtil {
 
 	public static boolean isBlank(String str) {
 		if (str == null) {
-			return true;
-		}
+            return true;
+        }
 		if (str.replaceAll(" ", "").length() == 0) {
 			return true;
 		}

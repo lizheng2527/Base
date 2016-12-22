@@ -74,6 +74,7 @@ public class ResultVo<T> implements Serializable {
 		if (lastIndex >= total)
 			return false;
 		return true;
+
 	}
 
 }

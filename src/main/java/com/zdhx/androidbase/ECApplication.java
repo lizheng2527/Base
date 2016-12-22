@@ -179,30 +179,44 @@ public class ECApplication extends Application {
     
     
     /**
-	 * 存储
+	 * 存储数据（sharePreference）
 	 */
 	public void saveValue(String key,String value){
 		SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(instance);
 		preferences.edit().putString(key,value).commit();
 	}
+
+    /**
+     * 获取数据（sharePreference）
+     * @param key
+     * @return
+     */
 	public String getValue(String key){
 		SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(instance);
 		return preferences.getString(key, "");
 	}
-    
-	//添加Activity到容器中
+
+    /**
+     * 将当前activity添加到容器中
+     * @param activity
+     */
 	public void addActivity(Activity activity){
 		activityList.add(activity);
 		System.out.println("activityList"+activityList.size());
 	}
-		
-	//移除Activity到容器中
+
+    /**
+     * 从容器中移除当前activity
+     * @param activity
+     */
 	public void removeActivity(Activity activity){
 		activityList.remove(activity);
 		System.out.println("activityList"+activityList.size());
 	}
-	
-	// 遍历所有Activity并finish
+
+    /**
+     * 遍历activity集合，退出所有！
+     */
 	public void exit(){
 		for (Activity activity : activityList){
 			activity.finish();

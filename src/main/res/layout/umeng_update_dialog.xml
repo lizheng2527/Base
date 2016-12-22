@@ -24,7 +24,6 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:text="@string/UMUpdateTitle"
-                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="@color/main_bg" />
             
         </RelativeLayout>

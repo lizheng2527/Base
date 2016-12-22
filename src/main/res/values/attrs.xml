@@ -137,7 +137,7 @@
         </attr>
     </declare-styleable>
 
-    <declare-styleable name="Themes">
+    <declare-styleable name="ThemesNumber">
         <attr name="numberProgressBarStyle" format="reference"/>
     </declare-styleable>
     

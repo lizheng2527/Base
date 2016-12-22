@@ -20,16 +20,16 @@ import com.zdhx.androidbase.util.NetUtils;
 
 /**
  * 广告图片自动轮播控件</br>
- * 
+ *
  * <pre>
  *   集合ViewPager和指示器的一个轮播控件，主要用于一般常见的广告图片轮播，具有自动轮播和手动轮播功能 
  *   使用：只需在xml文件中使用{@code <com.minking.imagecycleview.ImageCycleView/>} ，
  *   然后在页面中调用  {@link #setImageResources(ArrayList, ImageCycleViewListener) }即可!
- *   
+ *
  *   另外提供{@link #startImageCycle() } \ {@link #pushImageCycle() }两种方法，用于在Activity不可见之时节省资源；
  *   因为自动轮播需要进行控制，有利于内存管理
  * </pre>
- * 
+ *
  */
 public class ImageCycleView extends LinearLayout {
 
@@ -114,7 +114,6 @@ public class ImageCycleView extends LinearLayout {
 
 	/**
 	 * 装填图片数据
-	 * 
 	 * @param imageUrlList
 	 * @param imageCycleViewListener
 	 */
@@ -122,7 +121,7 @@ public class ImageCycleView extends LinearLayout {
 		// 清除所有子视图
 		mGroup.removeAllViews();
 		// 图片广告数量
-		
+
 //		new Thread(new Runnable() {
 //			
 //			@Override
@@ -135,7 +134,7 @@ public class ImageCycleView extends LinearLayout {
 //				}
 //			}
 //		}).start();
-		
+
 		final int imageCount = infoList.size();
 		mImageViews = new ImageView[imageCount];
 		for (int i = 0; i < imageCount; i++) {
@@ -209,7 +208,7 @@ public class ImageCycleView extends LinearLayout {
 
 	/**
 	 * 轮播图片状态监听器
-	 * 
+	 *
 	 * @author minking
 	 */
 	private final class GuidePageChangeListener implements OnPageChangeListener {
@@ -226,7 +225,7 @@ public class ImageCycleView extends LinearLayout {
 
 		@Override
 		public void onPageSelected(int index) {
-			
+
 			if (index == 0 || index == mImageViews.length + 1) {
 				return;
 			}
@@ -288,7 +287,7 @@ public class ImageCycleView extends LinearLayout {
 				imageView = new ImageView(mContext);
 				imageView.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
 				imageView.setScaleType(ImageView.ScaleType.FIT_XY);
-				
+
 			} else {
 				imageView = mImageViewCacheList.remove(0);
 			}
@@ -317,14 +316,14 @@ public class ImageCycleView extends LinearLayout {
 
 	/**
 	 * 轮播控件的监听事件
-	 * 
+	 *
 	 * @author minking
 	 */
 	public static interface ImageCycleViewListener {
 
 		/**
 		 * 加载图片资源
-		 * 
+		 *
 		 * @param imageURL
 		 * @param imageView
 		 */
@@ -332,7 +331,7 @@ public class ImageCycleView extends LinearLayout {
 
 		/**
 		 * 单击图片事件
-		 * 
+		 *
 		 * @param position
 		 * @param imageView
 		 */

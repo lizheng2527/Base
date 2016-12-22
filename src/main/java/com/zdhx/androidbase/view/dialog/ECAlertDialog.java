@@ -12,15 +12,12 @@
  */
 package com.zdhx.androidbase.view.dialog;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
 import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
+import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,6 +27,10 @@ import android.widget.TextView;
 
 import com.zdhx.androidbase.R;
 import com.zdhx.androidbase.util.LogUtil;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 
 /**
@@ -57,6 +58,12 @@ public class ECAlertDialog extends Dialog implements View.OnClickListener {
     private ViewGroup mLayoutContent;
     /**对话框按钮*/
     private View mLayoutButton;
+    /**标题位于左边*/
+    public static final int GRAVITY_LEFT = 0;
+    /**标题横向居中*/
+    public static final int GRAVITY_CENTER_HORIZONTAL = 1;
+    /**标题位于右边*/
+    public static final int GRAVITY_RIGHT = 2;
 
     /**
      * @param context
@@ -67,9 +74,6 @@ public class ECAlertDialog extends Dialog implements View.OnClickListener {
         initView();
     }
 
-    /**
-     *
-     */
     private void initView() {
         WindowManager.LayoutParams layoutParams = getWindow().getAttributes();
         layoutParams.width = WindowManager.LayoutParams.MATCH_PARENT;
@@ -349,7 +353,7 @@ public class ECAlertDialog extends Dialog implements View.OnClickListener {
     }
 
     /**
-     * 设置对话框标题
+     * 设置对话框标题及颜色
      */
     public void setTitle(CharSequence text,String colorString) {
         if ((text == null) || (TextUtils.isEmpty(text.toString()))) {
@@ -403,5 +407,33 @@ public class ECAlertDialog extends Dialog implements View.OnClickListener {
             ((ViewGroup.MarginLayoutParams)(this.mButtons.get(2)).getLayoutParams()).leftMargin = 1;
             ((ViewGroup.MarginLayoutParams)(this.mButtons.get(0)).getLayoutParams()).rightMargin = 1;
         }
+    }
+
+    /**
+     *设置按钮颜色
+     * @param i 按钮位置
+     * @param color 设置的颜色
+     */
+    public void setButtonColor(int i,String color){
+        if (mButtons.size()>0)
+        mButtons.get(i).setTextColor(Color.parseColor(color));
+
+    }
+
+    public void setTitleGravity(int i ){
+        switch (i){
+            case GRAVITY_LEFT:
+                ((TextView)findViewById(R.id.dialog_tv_title)).setGravity(Gravity.LEFT);
+                break;
+            case GRAVITY_CENTER_HORIZONTAL:
+                ((TextView)findViewById(R.id.dialog_tv_title)).setGravity(Gravity.CENTER_HORIZONTAL);
+                break;
+            case GRAVITY_RIGHT:
+                ((TextView)findViewById(R.id.dialog_tv_title)).setGravity(Gravity.RIGHT);
+                break;
+        }
+
+
+
     }
 }

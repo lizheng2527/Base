@@ -11,9 +11,6 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */package com.zdhx.androidbase.ui.base;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.app.Dialog;
 import android.content.Context;
 import android.os.IBinder;
@@ -31,6 +28,9 @@ import com.zdhx.androidbase.R;
 import com.zdhx.androidbase.util.LogUtil;
 import com.zdhx.androidbase.view.CCPLayoutListenerView;
 import com.zdhx.androidbase.view.TopBarView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 界面处理
@@ -73,7 +73,7 @@ public abstract class CCPActivityBase {
 
     public void init(Context context , FragmentActivity activity)  {
         mActionBarActivity = activity;
-        onInit();
+        onInit();//TODO
         int layoutId = getLayoutId();
         mLayoutInflater = LayoutInflater.from(mActionBarActivity);
         mBaseLayoutView = mLayoutInflater.inflate(R.layout.ccp_activity, null);

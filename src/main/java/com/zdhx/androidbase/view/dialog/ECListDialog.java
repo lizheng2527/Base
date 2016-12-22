@@ -1,8 +1,5 @@
 package com.zdhx.androidbase.view.dialog;
 
-import java.util.Arrays;
-import java.util.List;
-
 import android.app.Dialog;
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -14,6 +11,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.zdhx.androidbase.R;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * com.lanxum.hzth.im.common.dialog in ECDemo_Android
@@ -88,6 +88,8 @@ public class ECListDialog extends ECAlertDialog implements AdapterView.OnItemCli
     public void setAdapter(ListAdapter adapter) {
         mListView.setAdapter(adapter);
     }
+
+
 
 
 

@@ -10,11 +10,9 @@ import com.zdhx.androidbase.ECApplication;
 import com.zdhx.androidbase.R;
 import com.zdhx.androidbase.SystemConst;
 import com.zdhx.androidbase.entity.User;
-import com.zdhx.androidbase.ui.MainActivity;
 import com.zdhx.androidbase.ui.account.LoginActivity.LoginVo;
 import com.zdhx.androidbase.ui.base.BaseActivity;
 import com.zdhx.androidbase.util.GsonUtil;
-import com.zdhx.androidbase.util.ProgressUtil;
 import com.zdhx.androidbase.util.volley.Params;
 import com.zdhx.androidbase.util.volley.ResultListenerImpl;
 import com.zdhx.androidbase.util.volley.VolleyUtils;
@@ -50,15 +48,14 @@ public class WelcomeActivity extends BaseActivity {
 				if (ECApplication.getInstance().getCurrentUser() != null) {
 					login();
 				} else {
-					goIntent();	
+					goIntent();
 				}
 			}
 		}, 2000);
 	}
-	
-	
+
 	private void goIntent() {
-        startActivity(new Intent(context, MainActivity.class));
+        startActivity(new Intent(context, LoginActivity.class));
         finish();
     }
 	

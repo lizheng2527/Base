@@ -1,9 +1,10 @@
 package com.zdhx.androidbase;
 
-import java.util.Stack;
 import android.app.Activity;
 import android.os.Process;
 import android.util.Log;
+
+import java.util.Stack;
 
 /**
  * 应用程序Activity管理类：用于Activity管理和应用程序退出

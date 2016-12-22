@@ -9,7 +9,8 @@ that can be found in the LICENSE file in the root of the web site.
 
 An additional intellectual property rights grant can be found
 in the file PATENTS.  All contributing project authors may
-be found in the AUTHORS file in the root of the source tree.
+be found in the AUTHORS file in the root of the source tree.
+
 -->
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"

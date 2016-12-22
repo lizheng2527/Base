@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.zdhx.androidbase"
-        minSdkVersion 11
+        minSdkVersion 15
         targetSdkVersion 23
     }
 

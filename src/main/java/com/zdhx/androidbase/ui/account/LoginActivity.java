@@ -22,6 +22,8 @@ import com.zdhx.androidbase.util.volley.ResultListenerImpl;
 import com.zdhx.androidbase.util.volley.VolleyUtils;
 import com.zdhx.androidbase.view.dialog.ECProgressDialog;
 
+import static com.zdhx.androidbase.R.id.btn_left;
+
 /**
  * @Title: LoginActivity.java
  * @Package com.xinyulong.seagood.ui.account
@@ -61,7 +63,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener{
 		txt_regist.setOnClickListener(this);
 		txt_re_pwd = (TextView) findViewById(R.id.txt_re_pwd);
 		txt_re_pwd.setOnClickListener(this);
-		
+
 		if (ECApplication.getInstance().getCurrentUser()!=null) {
 			etxt_username.setText(ECApplication.getInstance().getCurrentUser().getLoginName());
 			etxt_pwd.setText(ECApplication.getInstance().getCurrentUser().getLoginPsw());
@@ -72,7 +74,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener{
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
-		case R.id.btn_left:
+		case btn_left:
 			finish();
 			break;
 		case R.id.txt_regist:
