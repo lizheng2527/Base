@@ -1,18 +1,24 @@
 package com.zdhx.androidbase.util;
 
-import static android.app.ActivityManager.RunningAppProcessInfo.IMPORTANCE_FOREGROUND;
-import static android.app.ActivityManager.RunningAppProcessInfo.IMPORTANCE_VISIBLE;
-
-import java.util.List;
-
 import android.app.ActivityManager;
 import android.app.KeyguardManager;
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
 
+import java.util.List;
+
+import static android.app.ActivityManager.RunningAppProcessInfo.IMPORTANCE_FOREGROUND;
+import static android.app.ActivityManager.RunningAppProcessInfo.IMPORTANCE_VISIBLE;
+
 public class SystemUtils {
 
+	/**
+	 * 是否已经安装此App
+	 * @param context
+	 * @param packageName
+	 * @return
+	 */
 	public static boolean isExistApp(Context context, String packageName) {
 		PackageInfo packageInfo;
 		try {

@@ -246,6 +246,14 @@ public class DateUtil {
 	public static String getCurrDateStringChina() {
 		return new SimpleDateFormat("yyyy年MM月dd日").format(new Date());
 	}
+	/**
+	 * 得到当前日期字符串，格式为 yyyy年MM月dd日
+	 *
+	 * @return 当前日期的字符串
+	 */
+	public static String getCurrDateStringChinaYearAndMonth() {
+		return new SimpleDateFormat("yyyy年MM月").format(new Date());
+	}
 
 	/**
 	 * 按日期得到字符串，格式为 yyyy年MM月dd日

@@ -1,8 +1,5 @@
 package com.zdhx.androidbase.ui.adapter;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.content.Context;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -11,6 +8,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
 import com.zdhx.androidbase.util.ToastUtil;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * ListAdapter基类

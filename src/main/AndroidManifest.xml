@@ -59,7 +59,10 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustUnspecified|stateHidden" >
         </activity>
-
+        <!--查询积分时使用的    选择时间及班级 -->
+        <activity android:name=".ui.scroSearch.SelectScroActivity" />
+        <!--发布动态 -->
+        <activity android:name=".ui.introducetreads.IntroduceTreadsActivity" />
         <!-- 分享相关 -->
         <activity
             android:name="com.mob.tools.MobUIShell"
@@ -91,6 +94,7 @@
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
 
         <!-- 蒲公英必选 -->
         <meta-data

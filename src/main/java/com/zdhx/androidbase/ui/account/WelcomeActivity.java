@@ -10,6 +10,7 @@ import com.zdhx.androidbase.ECApplication;
 import com.zdhx.androidbase.R;
 import com.zdhx.androidbase.SystemConst;
 import com.zdhx.androidbase.entity.User;
+import com.zdhx.androidbase.ui.MainActivity;
 import com.zdhx.androidbase.ui.account.LoginActivity.LoginVo;
 import com.zdhx.androidbase.ui.base.BaseActivity;
 import com.zdhx.androidbase.util.GsonUtil;
@@ -55,7 +56,7 @@ public class WelcomeActivity extends BaseActivity {
 	}
 
 	private void goIntent() {
-        startActivity(new Intent(context, LoginActivity.class));
+        startActivity(new Intent(context, MainActivity.class));
         finish();
     }
 	
@@ -95,7 +96,7 @@ public class WelcomeActivity extends BaseActivity {
 				super.onError();
 				goIntent();
 			}
-		});
+		},false);
 	}
 	
 	

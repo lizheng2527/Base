@@ -57,7 +57,10 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustUnspecified|stateHidden" >
         </activity>
-
+        <!-- 查询积分时使用的    选择时间及班级 -->
+        <activity android:name="com.zdhx.androidbase.ui.scroSearch.SelectScroActivity" />
+        <!-- 发布动态 -->
+        <activity android:name="com.zdhx.androidbase.ui.introducetreads.IntroduceTreadsActivity" />
         <!-- 分享相关 -->
         <activity
             android:name="com.mob.tools.MobUIShell"

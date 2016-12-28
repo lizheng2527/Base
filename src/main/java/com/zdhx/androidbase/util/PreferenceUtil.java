@@ -1,17 +1,18 @@
 package com.zdhx.androidbase.util;
 
+import android.content.Context;
+import android.content.SharedPreferences;
+
+import com.zdhx.androidbase.ECApplication;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
-import com.zdhx.androidbase.ECApplication;
-
-import android.content.Context;
-import android.content.SharedPreferences;
-
 public final class PreferenceUtil {
+
 
 	private PreferenceUtil() {
 	}
@@ -25,7 +26,6 @@ public final class PreferenceUtil {
 	public static String[] parseKey(String key) {
 		return key.split("_");
 	}
-	
 	
 	public static <T extends Serializable> boolean save(T entity, String key) {
 		if (entity == null) {
@@ -43,7 +43,6 @@ public final class PreferenceUtil {
 		String prefFileName = clazz.getName();
 		SharedPreferences sp = context.getSharedPreferences(prefFileName, 0);
 		Map<String, String> values = (Map<String, String>) sp.getAll();
-
 		List<T> results = new ArrayList<T>();
 
 		if (values == null || values.isEmpty())

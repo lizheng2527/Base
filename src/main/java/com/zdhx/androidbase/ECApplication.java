@@ -103,9 +103,9 @@ public class ECApplication extends Application {
         return mVolleyQueue;
     }
 
-    public static void addRequest(Request<?> req, String tag) {
+    public static void addRequest(Request<?> req, String tag,boolean shouldCache) {
         req.setTag(tag);
-        req.setShouldCache(false);
+        req.setShouldCache(shouldCache);
         getRequestQueue().add(req);
     }
     

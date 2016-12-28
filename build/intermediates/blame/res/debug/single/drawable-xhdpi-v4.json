@@ -2,5 +2,9 @@
     {
         "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\bg_me.jpg",
         "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\bg_me.jpg"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\bg_button_radius.xml",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-xhdpi\\bg_button_radius.xml"
     }
 ]

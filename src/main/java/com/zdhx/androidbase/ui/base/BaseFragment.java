@@ -17,6 +17,8 @@ public abstract class BaseFragment extends Fragment {
      * @return 页面资源ID
      */
     protected abstract int getLayoutId();
+
+
     
     
     /**

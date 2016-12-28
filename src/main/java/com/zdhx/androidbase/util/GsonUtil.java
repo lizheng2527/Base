@@ -46,7 +46,7 @@ public final class GsonUtil {
 
         return result;
     }
-
+    
     public static <T extends Object> T deserBequiet(String object, Class<T> clazz) {
         Gson gson = getGsonObject();
 

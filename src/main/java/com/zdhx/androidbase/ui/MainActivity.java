@@ -2,6 +2,7 @@ package com.zdhx.androidbase.ui;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
@@ -15,6 +16,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,25 +26,34 @@ import com.pgyersdk.javabean.AppBean;
 import com.pgyersdk.update.PgyUpdateManager;
 import com.pgyersdk.update.UpdateManagerListener;
 import com.zdhx.androidbase.R;
+import com.zdhx.androidbase.ui.account.HomeFragment;
 import com.zdhx.androidbase.ui.account.LoginActivity;
+import com.zdhx.androidbase.ui.account.MeFragment;
+import com.zdhx.androidbase.ui.account.ScroFragment;
+import com.zdhx.androidbase.ui.account.WorkSpaceFragment;
 import com.zdhx.androidbase.ui.base.BaseActivity;
+import com.zdhx.androidbase.ui.introducetreads.IntroduceTreadsActivity;
+import com.zdhx.androidbase.ui.scroSearch.SelectScroActivity;
 import com.zdhx.androidbase.util.LogUtil;
 import com.zdhx.androidbase.util.StringUtil;
 import com.zdhx.androidbase.util.ToastUtil;
+import com.zdhx.androidbase.view.dialog.ECListDialog;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class MainActivity extends BaseActivity implements OnClickListener{
 
+	public static HashMap<String,Object> map = new HashMap<String, Object>();
 	private Activity context;
 
-	private Fragment indexFragment;
+	private HomeFragment homeFragment;
 
-	private Fragment brandFragment;
+	private WorkSpaceFragment workSpaceFragment;
 
-	private Fragment expenseFragment;
+	private MeFragment meFragment;
 
-	private Fragment meFragment;
+	private ScroFragment scroFragment;
 
 	private Fragment[] fragments;
 
@@ -52,6 +64,29 @@ public class MainActivity extends BaseActivity implements OnClickListener{
 	private Button[] mTabs;
 
 	private RelativeLayout[] mTabContainers;
+
+	private LinearLayout typeMenu;
+	//主页显示的菜单选项
+	private ArrayList<String> homeMenuDatas;
+	//选择菜单的计数器（用来统计显示的条目）
+	private int menuPosition;
+	//选择菜单显示的文字
+	private TextView menuSelectedTV;
+
+	public static int SELECTMENUINDEX = 0;
+	//功能fragment标题
+	private TextView fragTitle;
+	//标题栏左边第一个图标
+	private ImageView titleImgFirst;
+	//标题栏左边第二个图标
+	private ImageView titleImgSecond;
+	//标题栏左边第三个图标
+	private ImageView titleImgThird;
+	//跳转到选择时间及班级的请求码
+	private final  int SELECTSCROACTIVITYCODE = 0;
+	//跳转到发布活动页面的请求码
+	private final  int INTRODUCETREADSCODE = 1;
+
 
 	/**
 	 * 缓存三个TabView
@@ -66,7 +101,7 @@ public class MainActivity extends BaseActivity implements OnClickListener{
 		super.onCreate(savedInstanceState);
 		context = this;
 		checkVerson();
-		getTopBarView().setTopBarToStatus(1, -1,-1,"AndroidBase", this);
+		getTopBarView().setVisibility(View.GONE);
 		initLauncherUIView();
 		updata();
 	}
@@ -75,16 +110,16 @@ public class MainActivity extends BaseActivity implements OnClickListener{
 	 * 初始化主界面UI视图
 	 */
 	private void initLauncherUIView() {
-		indexFragment = new Fragment();
-		brandFragment = new Fragment();
-		expenseFragment = new Fragment();
-		meFragment = new Fragment();
-		fragments = new Fragment[] { indexFragment, brandFragment,expenseFragment, meFragment };
-		getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, indexFragment)
-				.add(R.id.fragment_container, brandFragment)
-				.add(R.id.fragment_container, expenseFragment)
-				.hide(brandFragment).hide(expenseFragment)
-				.show(indexFragment).commitAllowingStateLoss();
+		homeFragment =  new HomeFragment();
+		workSpaceFragment = new WorkSpaceFragment();
+		meFragment = new MeFragment();
+		scroFragment = new ScroFragment();
+		fragments = new Fragment[] { homeFragment, workSpaceFragment,scroFragment, meFragment };
+		getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, homeFragment)
+				.add(R.id.fragment_container, workSpaceFragment)
+				.add(R.id.fragment_container, scroFragment).add(R.id.fragment_container,meFragment)
+				.hide(workSpaceFragment).hide(scroFragment).hide(meFragment)
+				.show(homeFragment).commitAllowingStateLoss();
 		mTabs = new Button[4];
 		mTabs[0] = (Button) findViewById(R.id.btn_conversation);
 		mTabs[1] = (Button) findViewById(R.id.btn_address_list);
@@ -99,32 +134,121 @@ public class MainActivity extends BaseActivity implements OnClickListener{
 		// 把第一个tab设为选中状态
 		mTabs[0].setSelected(true);
 		mTabContainers[0].setSelected(true);
+		typeMenu = (LinearLayout) findViewById(R.id.home_menu);
+		menuSelectedTV = (TextView) findViewById(R.id.menuSelectedTV);
+		homeMenuDatas = new ArrayList<String>();
+		homeMenuDatas.add("班级");
+		homeMenuDatas.add("年级");
+		homeMenuDatas.add("学校");
+		homeMenuDatas.add("教师");
+		typeMenu.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				ECListDialog d = new ECListDialog(MainActivity.this,homeMenuDatas,menuPosition);
+				d.setOnDialogItemClickListener(new ECListDialog.OnDialogItemClickListener() {
+					@Override
+					public void onDialogItemClick(Dialog d, int position) {
+						menuPosition = position;
+						menuSelectedTV.setText(homeMenuDatas.get(position));
+						//TODO
+					}
+				});
+				d.show();
+			}
+		});
+		fragTitle = (TextView) findViewById(R.id.main_title);
+		titleImgFirst = (ImageView) findViewById(R.id.main_img_left_first);
+		titleImgSecond = (ImageView) findViewById(R.id.main_img_left_second);
+		titleImgThird = (ImageView) findViewById(R.id.main_img_left_third);
+		titleImgThird.setImageResource(R.drawable.send_treads);
+		titleImgThird.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				OnRightButtonClick();
+			}
+		});
+	}
+
+	private void OnRightButtonClick() {
+		switch (SELECTMENUINDEX){
+			case 0:
+				doToast("互动交流点击事件");
+				startActivityForResult(new Intent(MainActivity.this,IntroduceTreadsActivity.class),INTRODUCETREADSCODE);
+				break;
+			case 1:
+				doToast("工作平台点击事件");
+				break;
+			case 2:
+				doToast("显示时间Dialog");
+				startActivityForResult(new Intent(this, SelectScroActivity.class),SELECTSCROACTIVITYCODE);
+				break;
+		}
 	}
 
 	/**
 	 * button点击事件
-	 *
+	 * 标题栏文字转换处理及图片显示处理
 	 * @param view
 	 */
 	public void onTabClicked(View view) {
 		switch (view.getId()) {
 			case R.id.btn_conversation:
+				typeMenu.setVisibility(View.VISIBLE);
+				titleImgSecond.setVisibility(View.VISIBLE);
+				titleImgThird.setVisibility(View.VISIBLE);
+				titleImgThird.setImageResource(R.drawable.send_treads);
+				fragTitle.setText("互动交流");
+				menuSelectedTV.setText("班级");
+				if (homeMenuDatas != null){
+					homeMenuDatas.clear();
+				}else{
+					homeMenuDatas = new ArrayList<String>();
+				}
+				homeMenuDatas.add("班级");
+				homeMenuDatas.add("年级");
+				homeMenuDatas.add("学校");
+				homeMenuDatas.add("教师");
 				index = 0;
-				getTopBarView().setTitle("AndroidBase-1");
+				SELECTMENUINDEX = 0;
 				break;
 			case R.id.btn_address_list:
+				titleImgSecond.setVisibility(View.VISIBLE);
+				typeMenu.setVisibility(View.VISIBLE);
+				titleImgThird.setVisibility(View.VISIBLE);
+				titleImgThird.setImageResource(R.drawable.btn_index_normal);
+				fragTitle.setText("工作平台");
+				menuSelectedTV.setText("教师备课资源");
+				if (homeMenuDatas != null){
+					homeMenuDatas.clear();
+				}else{
+					homeMenuDatas = new ArrayList<String>();
+				}
+					homeMenuDatas.add("教师备课资源");
+					homeMenuDatas.add("学生生成资源");
+					homeMenuDatas.add("学生自我挑战");
+					homeMenuDatas.add("学生作业质量");
 				index = 1;
-				getTopBarView().setTitle("AndroidBase-2");
+				SELECTMENUINDEX = 1;
 				break;
 			case R.id.btn_circle:
+				fragTitle.setText("积分排名");
+				titleImgSecond.setVisibility(View.INVISIBLE);
+				titleImgThird.setVisibility(View.VISIBLE);
+				titleImgThird.setImageResource(R.drawable.icon_sendtime);
+				typeMenu.setVisibility(View.INVISIBLE);
+				SELECTMENUINDEX = 2;
 				index = 2;
-				getTopBarView().setTitle("AndroidBase-3");
 				break;
 			case R.id.btn_app:
+				titleImgSecond.setVisibility(View.INVISIBLE);
+				titleImgThird.setVisibility(View.INVISIBLE);
+				typeMenu.setVisibility(View.INVISIBLE);
+				fragTitle.setText("我的");
+				SELECTMENUINDEX = 3;
 				index = 3;
-				getTopBarView().setTitle("AndroidBase-4");
 				break;
 		}
+		menuPosition = 0;
 		if (currentTabIndex != index) {
 			FragmentTransaction trx = getSupportFragmentManager()
 					.beginTransaction();
@@ -205,24 +329,6 @@ public class MainActivity extends BaseActivity implements OnClickListener{
 		super.onResume();
 	}
 
-	private String getTitleText() {
-		String text = "AndroidBase-1";
-		switch (index) {
-			case 0:
-				text = "AndroidBase-1";
-				break;
-			case 1:
-				text = "AndroidBase-2";
-				break;
-			case 2:
-				text = "AndroidBase-3";
-				break;
-			case 3:
-				text = "AndroidBase-4";
-				break;
-		}
-		return text;
-	}
 
 	private long exitTime = 0;
 
@@ -246,6 +352,13 @@ public class MainActivity extends BaseActivity implements OnClickListener{
 		super.onActivityResult(requestCode, resultCode, data);
 		if (resultCode == 9000) {
 
+		}
+
+		if (resultCode == SELECTSCROACTIVITYCODE){
+			if (map !=null){
+				String s = (String) map.get("data");
+				doToast(s);
+			}
 		}
 	}
 

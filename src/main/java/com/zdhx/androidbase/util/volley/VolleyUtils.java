@@ -1,9 +1,5 @@
 package com.zdhx.androidbase.util.volley;
 
-import java.io.File;
-import java.util.List;
-import java.util.Map;
-
 import android.util.Log;
 
 import com.zdhx.androidbase.ECApplication;
@@ -21,6 +17,10 @@ import com.zdhx.volley.TimeoutError;
 import com.zdhx.volley.VolleyError;
 import com.zdhx.volley.toolbox.StringRequest;
 
+import java.io.File;
+import java.util.List;
+import java.util.Map;
+
 /**
  * 网络请求工具类
  */
@@ -33,8 +33,10 @@ public class VolleyUtils {
 	 *            请求url
 	 * @param listener
 	 *            结果回调
+	 * @param isShouldCache
+	 *			是否缓存
 	 */
-	public static void requestService(String url, final Map<String, String> params, final ResultLinstener listener) {
+	public static void requestService(String url, final Map<String, String> params, final ResultLinstener listener,boolean isShouldCache) {
 
 		//无网络不进行请求
 		if (!NetUtils.isNetworkConnected()){
@@ -85,7 +87,7 @@ public class VolleyUtils {
 		};
 		stringRequest.setRetryPolicy(new DefaultRetryPolicy(60 * 1000, 0, 1));
 		// Add the request to the RequestQueue.
-		ECApplication.addRequest(stringRequest, url);
+		ECApplication.addRequest(stringRequest, url,isShouldCache);
 
 	}
 
@@ -96,9 +98,10 @@ public class VolleyUtils {
      * @param filePartName 文件参数名
      * @param files 文件List
      * @param listener 结果回调
+	 * @param isShouldCache 是否缓存
      */
 	public static void requestServiceWithFile(String url, final Map<String, String> params
-            ,String filePartName,List<File> files, final ResultLinstener listener) {
+            ,String filePartName,List<File> files, final ResultLinstener listener,boolean isShouldCache) {
 		//无网络不进行请求
 		if (!NetUtils.isNetworkConnected()){
 			listener.onIOError();
@@ -147,7 +150,7 @@ public class VolleyUtils {
 
         multipartRequest.setRetryPolicy(new DefaultRetryPolicy(3*60 * 1000, 0, 1));
 		// Add the request to the RequestQueue.
-        ECApplication.addRequest(multipartRequest, url);
+        ECApplication.addRequest(multipartRequest, url,isShouldCache);
 
 	}
 

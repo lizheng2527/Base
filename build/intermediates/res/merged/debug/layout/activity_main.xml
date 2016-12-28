@@ -19,7 +19,7 @@
             android:id="@+id/btn_container_conversation"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-           	android:background="@drawable/bg_tab"
+            android:background="@drawable/bg_tab"
             android:layout_weight="1" >
 
             <Button
@@ -32,7 +32,7 @@
                 android:paddingBottom="2dip"
                 android:paddingTop="8dip"
                 android:scaleType="matrix"
-                android:text="首页"
+                android:text="互动交流"
                 android:drawableTop="@drawable/tab_index_selector"
                 android:textColor="@color/main_botton_text_color"
                 android:textSize="12sp" />
@@ -79,7 +79,7 @@
                 android:paddingBottom="2dip"
                 android:paddingTop="8dip"
                 android:scaleType="matrix"
-                android:text="品牌"
+                android:text="工作平台"
                 android:drawableTop="@drawable/tab_brand_selector"
                 android:textColor="@color/main_botton_text_color"
                 android:textSize="12sp" />
@@ -102,7 +102,7 @@
                 android:paddingBottom="2dip"
                 android:paddingTop="8dip"
                 android:scaleType="matrix"
-                android:text="服务"
+                android:text="积分排名"
                 android:drawableTop="@drawable/tab_expense_selector"
                 android:textColor="@color/main_botton_text_color"
                 android:textSize="12sp" />
@@ -155,13 +155,14 @@
         </RelativeLayout>
     </LinearLayout>
 
+
     <RelativeLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_above="@+id/line"
-        android:background="#eeeeee" >
+        android:background="#eeeeee"
+        android:layout_below="@+id/main_top">
     </RelativeLayout>
 
     <RelativeLayout
@@ -171,7 +172,88 @@
         android:layout_above="@+id/main_bottom"
         android:background="@drawable/line_middle"
         android:layout_alignParentLeft="true"
-         >
+        >
     </RelativeLayout>
 
+    <LinearLayout
+        android:id="@+id/main_top"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f0f0f0"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/title_color"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <LinearLayout
+                    android:clickable="true"
+                    android:id="@+id/home_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center|left"
+                    >
+                    <ImageView
+                        android:id="@+id/main_img_left_first"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/btn_index_normal"
+                        />
+                    <TextView
+                        android:id="@+id/menuSelectedTV"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:textSize="14sp"
+                        android:textColor="#ffffff"
+                        android:text="@string/classroom"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/main_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:text="互动交流"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:paddingRight="15dp"
+                android:gravity="center|right"
+                >
+                <ImageView
+                    android:id="@+id/main_img_left_second"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/btn_index_normal"
+                    />
+                <ImageView
+                    android:id="@+id/main_img_left_third"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/btn_index_normal"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>

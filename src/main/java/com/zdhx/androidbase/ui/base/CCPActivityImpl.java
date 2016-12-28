@@ -30,6 +30,10 @@ public class CCPActivityImpl extends CCPActivityBase {
         mActivity.onActivityInit();
     }
 
+    /**
+     * 加载布局
+     * @return
+     */
     @Override
     protected int getLayoutId() {
         return mActivity.getLayoutId();

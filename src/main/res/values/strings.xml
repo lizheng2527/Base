@@ -27,4 +27,7 @@
     <string name="content">拍照</string>
     <string name="cancel">取消</string>
     <string name="copyright">北京中电和讯科技有限公司</string>
+
+    <!-- fragment_home -->
+    <string name="classroom">班级</string>
 </resources>

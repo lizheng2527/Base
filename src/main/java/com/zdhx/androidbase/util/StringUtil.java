@@ -2,6 +2,11 @@ package com.zdhx.androidbase.util;
 
 public class StringUtil {
 
+    /**
+     * 是否为空格
+     * @param str
+     * @return
+     */
 	public static boolean isBlank(String str) {
 		if (str == null) {
             return true;

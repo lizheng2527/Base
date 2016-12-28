@@ -38,12 +38,7 @@ public abstract class BaseActivity extends FragmentActivity {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		mBaseActivity.init(getBaseContext(), this);
-
-
-
 		PgyCrashManager.register(this);
-
-
 	}
 
 	@Override

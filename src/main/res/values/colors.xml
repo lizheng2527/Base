@@ -8,6 +8,7 @@
     <item name="green_btn_color_disable" type="color">@color/ccp_green_alpha</item>
 
     <color name="list_divider">#ffdadada</color>
+    <color name="title_color">#ff33Ccff</color>
     <color name="green_btn_color_pressed">#ff298409</color>
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#aaaaaa</color>

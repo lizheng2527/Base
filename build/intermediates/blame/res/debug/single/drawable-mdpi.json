@@ -2,5 +2,17 @@
     {
         "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_launcher.png",
         "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\btn_add_pic.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-mdpi\\btn_add_pic.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\send_treads.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-mdpi\\send_treads.png"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\btn_delete_red_normal.png",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\drawable-mdpi\\btn_delete_red_normal.png"
     }
 ]

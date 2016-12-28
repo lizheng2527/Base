@@ -1,11 +1,27 @@
 [
     {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\activity_selectscro.xml",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\activity_selectscro.xml"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_scro.xml",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\fragment_scro.xml"
+    },
+    {
         "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\date_picker_view_animator.xml",
         "source": "D:\\01_work\\JXZPro\\datetimepicker\\build\\intermediates\\bundles\\default\\res\\layout\\date_picker_view_animator.xml"
     },
     {
         "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\comm_loading_dialog.xml",
         "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\comm_loading_dialog.xml"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_workspace_listview_item.xml",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\fragment_workspace_listview_item.xml"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_scro_viewpager_student.xml",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\fragment_scro_viewpager_student.xml"
     },
     {
         "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\date_picker_selected_date.xml",
@@ -16,8 +32,44 @@
         "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_me.xml",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\fragment_me.xml"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_scro_viewpager_teacher.xml",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\fragment_scro_viewpager_teacher.xml"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_home_grid_item.xml",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\fragment_home_grid_item.xml"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_home_viewpager_resourcestreads.xml",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\fragment_home_viewpager_resourcestreads.xml"
+    },
+    {
         "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\common_dialog_generic.xml",
         "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\common_dialog_generic.xml"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_home_viewpager_attendstreads.xml",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\fragment_home_viewpager_attendstreads.xml"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_home_viewpager_alltreads.xml",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\fragment_home_viewpager_alltreads.xml"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_workspace_grid_item.xml",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\fragment_workspace_grid_item.xml"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\gv_item_image.xml",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\gv_item_image.xml"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_home_viewpager_interacttreads.xml",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\fragment_home_viewpager_interacttreads.xml"
     },
     {
         "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\year_label_text_view.xml",
@@ -32,6 +84,10 @@
         "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\ccp_activity.xml"
     },
     {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_home_viewpager_listview_item.xml",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\fragment_home_viewpager_listview_item.xml"
+    },
+    {
         "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\wheel_item.xml",
         "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\wheel_item.xml"
     },
@@ -40,8 +96,20 @@
         "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\view_banner_content.xml"
     },
     {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_home.xml",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
         "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_update_dialog.xml",
         "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\umeng_update_dialog.xml"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_workspace.xml",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\fragment_workspace.xml"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_scro_grid_item.xml",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\fragment_scro_grid_item.xml"
     },
     {
         "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\common_view_top_bar.xml",
@@ -86,6 +154,22 @@
     {
         "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\common_loading_diloag.xml",
         "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\common_loading_diloag.xml"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_scro_viewpager_listview_item.xml",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\fragment_scro_viewpager_listview_item.xml"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sendnewcircle.xml",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\activity_sendnewcircle.xml"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_me_listview.xml",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\fragment_me_listview.xml"
+    },
+    {
+        "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_home_viewpager_mytreads.xml",
+        "source": "D:\\01_work\\JXZPro\\jxz\\src\\main\\res\\layout\\fragment_home_viewpager_mytreads.xml"
     },
     {
         "merged": "D:\\01_work\\JXZPro\\jxz\\build\\intermediates\\res\\merged\\debug\\layout\\listitem_dialog.xml",
